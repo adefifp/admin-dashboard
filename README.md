@@ -1,1 +1,1 @@
-# admin-dashboard
+Hi! This is my admin dashboard practice for the Odin Project with HTML and CSS.
