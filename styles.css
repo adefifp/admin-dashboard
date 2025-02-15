@@ -1,10 +1,19 @@
 html,body{
+    margin: 0;
     height: 100%;
+}
+button{
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+}
+h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    border: black 2px solid;
     height: 100%;
 }
 .dashboard{
@@ -12,7 +21,7 @@ html,body{
     grid-template-rows: 100px 2fr 2fr;
     background-color: rgb(28, 144, 221);
 }
-button{
+.dashboard button{
     display: flex;
     flex-direction: row;
     background-color: transparent;
@@ -54,17 +63,161 @@ button img {
     grid-template-rows: 1fr 4fr;
 }
 .header{
-    border: black solid 2px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    z-index: 1;
 }
 input{
-    margin-left: 8px;
     margin-top: 20px;
     height: 30px;
-    width: 800px;
-    border-radius: 12px;
-    background-color: rgb(197, 196, 196);
+    width: 1000px;
+    border-radius: 16px;
+    background-color: rgb(212, 212, 212);
     border: none;
 }
+.searchBar{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.searchBar img{
+    padding-top: 22px;
+    padding-left: 30px;
+}
 form{
-    margin-left:40px;
+    margin-left:30px;
+}
+.bell{
+    margin-left: 100px;
+}
+.searchProfile{
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.searchBar h2{
+    margin-left: 30px;
+    margin-top: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.profileHead {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.profileHead img{
+    margin-left: 30px;
+}
+.intro h3{
+    font-size: 16px;
+    padding-top: 0px;
+    margin-left:20px;
+    margin-bottom: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.intro h1{
+    font-size: 32px;
+    margin-left:20px;
+    margin-top:0px;
+    padding-top:0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.profileHead button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 30px;
+    margin-left: 40px;
+    background-color: rgb(28, 144, 221);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+}
+.profile{
+    display:flex;
+    flex-direction: row;
+}
+.profileButtons{
+    margin-left: 250px;
+}
+.bodyContainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgb(223, 223, 223);
+}
+.mainBody{
+    display: grid;
+    grid-template-rows: 100px 400px 400px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+}
+.mainBody h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    margin-top:36px;
+}
+.project{
+    position: relative;
+    height: 90%;
+    width: 95%;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.project h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px;
+}
+.project h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px;
+    font-size: medium;
+    color: gray;
+}
+.project button{
+    background-color: transparent;
+    border: none;
+}
+.project img{
+    margin: 20px;
+}
+.projectButtons{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+.sideBar{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.announcements h1{
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: 36px;
+    font-size: 24px;
+    padding-left: 0px;
+}
+.sideBox{
+    margin-left: 10px;
+    position: relative;
+    height: 75%;
+    width: 95%;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.sideBox h1{
+    margin-left: 12px;
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.sideBox h2{
+    margin-left: 12px;
+    color: gray;
+    font-size: 20px;
 }
